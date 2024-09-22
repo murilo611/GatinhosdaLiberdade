@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os Gatinhos da Liberdade</title>
+    
+    <!-- Google Fonts para melhorar a aparência -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <!-- Header com Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1>Os Gatinhos da Liberdade</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- Ícone de menu hamburguer -->
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Seção de Vídeo com Conteúdo -->
+    <section id="home">
+        <div class="background-video">
+            <video autoplay muted loop>
+                <source src="public/17029767-hd_1080_1920_24fps.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <div class="conteudo-sobre-video">
+                <h2>Ajude os Gatinhos da Liberdade</h2>
+                <p>Faça agora sua doação e ajude a salvar os animais.</p>
+                <p>MbWay +351 926071127</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <h2>Ajude a Colônia de Gatos na Rua da Liberdade</h2>
+        <p>As ações são fundamentais para garantir a alimentação adequada, tratamentos veterinários regulares, vacinação, e, em muitos casos, medicamentos essenciais. Além disso, parte do valor arrecadado também é destinada a esforços de castração e adoção, permitindo que alguns desses gatinhos encontrem um novo lar
+
+            Ao contribuir, você está fazendo parte de uma corrente do bem, ajudando a transformar a vida desses animais. Qualquer valor faz a diferença e será utilizado para garantir que esses felinos continuem recebendo o que precisam para viver com dignidade e saúde.
+            
+            Seja um protetor desses gatinhos!.</p>
+        <button id="botaoDoacao" onclick="window.location.href='2index.html'">Fazer Doação</button>
+    </section>
+
+    <!-- Seção de Galeria -->
+    <section id="galeria" class="galeria section">
+        <h2>Galeria de Gatos</h2>
+        <div class="galeria-imagens">
+            <img src="public/1dfe9614-f5c7-4660-8fde-02f863f3591c.jpg" alt="Gato 1">
+            <img src="public/25ef4540-e44f-4e70-9cfc-09529c2d4966.jpg" alt="Gato 2">
+            <img src="public/593982f6-a1cb-4da4-af64-8da8b79f4185.jpg" alt="Gato 3">
+            <img src="public/7e0f1853-7fea-4728-b0a4-302bf56568bf.jpg" alt="Gato 4">
+            <img src="public/95cda01a-e6bb-49b8-9358-85a9407c1c50.jpg" alt="Gato 5">
+            <img src="public/b5c4f82d-9720-42b1-b537-48d5a6b6ea63.jpg" alt="Gato 6">
+            <img src="public/b5e71ed4-7996-4d22-ae58-f17c6c46bd5e.jpg" alt="Gato 6">
+            <img src="public/c2f53dd5-ab7a-4ef2-88d8-db580bc750b6.jpg" alt="Gato 6">
+            <img src="public/d2d5ddcb-f63a-4c37-b5a7-5982ed6eedbf.jpg" alt="Gato 6">
+
+            <!-- Continue adicionando suas imagens aqui -->
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato section">
+        <h2>Entre em Contato</h2>
+        <form action="https://formspree.io/f/xzzplvpw" method="POST">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="message" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Os Gatinhos da Liberdade. Todos os direitos reservados.</p>
+        <a href="index.html">Voltar para a página inicial</a>
+    </footer>
+
+    <!-- Script para o menu hamburguer -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-links');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
